@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": false,
+  "rewrites": [
+    { "source": "/", "destination": "/api/share" },
+    { "source": "/b/:slug*", "destination": "/api/share?berita=:slug*" },
+    { "source": "/berita/:slug*", "destination": "/api/share?berita=:slug*" }
+  ]
+}
